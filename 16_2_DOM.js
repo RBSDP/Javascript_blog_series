@@ -4,18 +4,19 @@ function changeBackGroundColoe(color){
     document.body.style.backgroundColor = color
 }
 
-const ThemeButton = document.getElementById("ThemeButton")
+const themeButton = document.getElementById("ThemeButton")
+console.log(themeButton)
 
-ThemeButton.addEventListener("click", () =>{
+themeButton.addEventListener("click", () =>{
 
     const backgroundcolor = document.body.style.backgroundColor
 
     if(!backgroundcolor || backgroundcolor == 'black'){
         changeBackGroundColoe("white")
-        ThemeButton.innerText = "black"
+        themeButton.innerText = "Dark Mode"
     } else{
          changeBackGroundColoe("black")
-        ThemeButton.innerText = "white"
+        themeButton.innerText = "Light Mode"
 
     }
 })
